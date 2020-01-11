@@ -1,0 +1,684 @@
+body{
+    margin: 0px;
+    font-family: "Century Gothic";
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+ul{
+    /* tirar os pontos das listas */
+    list-style-type: none;
+    /* white space fora de um elemento */
+    margin: 0;
+    /* white space dentro de elemento */
+    padding:0;
+}
+
+.container{
+    /* tornar tudo centrado */
+    text-align: center;
+    padding: 0.1px 0em;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+.menu{
+    width: 25px;
+    margin-top: 45%;
+
+    /* padding-right: 90%; */
+    margin-right: 10px;
+    z-index: 9999;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+button {
+    margin-top: 23%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.myButton {
+	box-shadow:inset 0px 2px 9px -2px #000000;
+	background:linear-gradient(to bottom, #3a9969 5%, #3a9969  100%);
+	background-color:#3a9969;
+	border-radius:6px;
+	border:1px solid #3a9969;
+	display:inline-block;
+	cursor:pointer;
+	color:#31502e;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 38px;
+	text-decoration:none;
+	text-shadow:0px -2px 0px #3a9969;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #3a9969 5%, #5cb811 100%);
+	background-color:#3a9969;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.section1{
+    margin-top: 15%;
+}
+
+.diogoInfo{
+    width: 250px;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width:100%;
+   background-color: #3a9969;
+   z-index: 9999;
+}
+
+.diogoInfo2{
+    width: 180px;
+}
+
+.cssPhoto{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.htmlPhoto{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.javascriptPhoto{
+    width: 30px;
+    margin-left: 10px;
+}
+
+h1, .subhead {
+    position: relative;
+    z-index: 3;
+}
+
+.subhead{
+     font-size: 1.2em;
+}
+
+.green-container{
+    text-align: center;
+    width:100%;
+    background:#3fbf7f;
+    color: #ffffff;
+    margin: 15% 0 0;
+    /* or
+    margin-top:15% */
+   padding: 2em 0 2em;
+   /* fazer a borda redonda do lado de cima esquerdo  */
+   border-top-left-radius: 40px;
+   /* fazer a subida */
+   transform: skewY(-2deg);
+   margin-bottom: 5%;
+   position: relative;
+   padding-bottom: 10px;
+}
+
+.green-container:before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    background-color: #3fbf7f;
+    /* podemos meter onde quisermos */
+    position: absolute;
+    top: -39px;
+    right:0;
+    z-index: -2;
+} 
+
+.green-container:after{
+    content:"";
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    /* podemos meter onde quisermos */
+    position: absolute;
+    top: -80px;
+    right:0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.green-container .container1 {
+    
+    text-align: center;
+    transform: skewY(+2deg);
+}
+
+
+.green-container .about{
+    text-align: center;
+    transform: skewY(+2deg);
+}
+
+
+
+.container .skills{
+    margin-top: 5%;
+    padding-top: 10px;
+    list-style: none;
+    margin: 60px auto;
+    color:#3ba16e;
+}
+
+.skills h1{
+    margin-bottom: 7%;
+}
+
+.container .skills li h3{
+    text-align: left;
+    /* font-family: Impact, Charcoal, sans-serif; */
+    margin-left: 12%;
+    color:#090e0b;
+}
+
+.bar{ 
+    width: 75%;
+    background: black;
+    display: inline-block;
+    height: 2px;
+    border: 1px solid #3ba16e ;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:0 0 10px #167043;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #54eea1;
+}
+
+.java{
+    width: 70%;
+    animation: java 5s infinite;
+}
+
+.javascript{
+    width: 60%;
+    animation: javascript 5s infinite;
+}
+
+.net{
+    width: 50%;
+    animation: net 5s infinite;
+}
+
+.node{
+    width: 50%;
+    animation: node 5s infinite;
+}
+
+.vue{
+    width: 50%;
+    animation: vue 5s infinite;
+}
+
+.html{
+    width: 50%;
+    animation: html 5s infinite;
+}
+
+.css{
+    width: 50%;
+    animation: css 5s infinite;
+}
+
+.sql{
+    width: 40%;
+    animation: sql 5s infinite;
+}
+
+.c{
+    width: 40%;
+    animation: c 5s infinite;
+}
+
+
+.contact-container{
+    text-align: center;
+    margin-top: -3%;
+    padding-top: 100px;
+    color: #000;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+.cta {
+    background: #3fbf7f;
+    /* width: calc(100% - 30em);
+    display: block; */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+
+.footer{
+    text-align: center;
+}
+
+.footer-container{
+
+    background: rgb(71, 70, 70);
+    transform: skewY(2deg);
+    margin-bottom: 0ex;
+}
+
+.footer-container .container{
+    padding-top: 10%;
+    color: white;
+    transform: skewY(-2deg);
+    padding-bottom: 5%;
+}
+
+
+.footer-container:before{
+    content: "";
+    width:40px;
+    height:40px;
+    background-color: rgb(71, 70, 70); 
+    position: absolute;
+    top:-39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after{
+    content: "";
+    width:80px;
+    height:80px;
+    background-color: #fff; 
+    position: absolute;
+    top:-39px;
+    left: 0;
+    z-index: -1;
+    top: -80px;
+    border-radius: 50%;
+}
+
+nav ul{
+    position: fixed;
+    width: 40%;
+    top:0;
+    right:0;
+    text-align:left;
+    background: #2b7952;
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #3ba16e;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #4dca8c;
+}
+
+.logo2{
+    width: 50px;
+    padding-bottom: 3%;
+    animation: move 2s infinite alternate;
+}
+
+.exit-btn{
+    margin-bottom: 1.4em;
+    margin-top: -1.3em;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.exit-btn img {
+    width:5%;
+    cursor:pointer;
+}
+
+.green-container .name{
+    transform: skewY(+2deg);
+}
+
+.container1 .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: #000;
+    background: rgb(61, 221, 21);
+    /* margin: 15px;*/
+    margin-bottom: 5%; 
+    margin: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container1 .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  rgb(68, 255, 21) ;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container1 .box:hover .icon{
+    top: 5px;
+    right: calc(50% -40px);
+    width: 80px;
+    height: 80px;
+    /* centrar o logotipo do github */
+    /* left: 40%; */
+    border-radius: 50%;
+}
+
+.container1 .box .icon .fa{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    /* transition: 3s; */
+    color: #fff;
+}
+
+.container1 .box:hover .icon .fa{
+    transition: 2s;
+    font-size: 60px;
+    color: #167043;
+}
+
+.container1 .box:hover .icon h3{
+        /* transition: 0.5s; */
+        font-size: 0px;
+        /* color:rgb(68, 255, 21);  */
+    
+}
+
+.container1 .box .icon .fa:hover{
+    transition: 2s;
+    color: #c8dad1;
+}
+
+.container1{
+    position: relative;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap ;
+}
+
+.container1 .box .content{
+    position:absolute;
+    top: 15px;
+    height: calc(100%-40px);
+    text-align: center;
+    padding:20px;
+    color: #000;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.container1 .box .content h3{
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.skills .h1{
+    margin-top: 5%;
+}
+
+.logo1{
+    width: 25%;
+}
+
+.footer-container .redirections a{
+    color: #b2bdb7;
+}
+
+.footer-container .redirections p{
+    padding-top: 5%;
+    font-size: 10px;
+    color: #b2bdb7;
+}
+
+
+
+
+/* animations */
+@keyframes move {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes java {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%
+    }
+}
+
+@keyframes net {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%
+    }
+}
+
+@keyframes node {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%
+    }
+}
+
+@keyframes vue {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%
+    }
+}
+@keyframes html {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%
+    }
+}
+
+@keyframes css {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%
+    }
+}
+
+@keyframes sql {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:40%
+    }
+}
+
+@keyframes c {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:40%
+    }
+}
+
+
+/* mudar elementos conforme o tamanho da pagina */
+@media only screen and (min-width: 1000px) and (max-width:1400px)  {
+
+
+/* .container {
+    width: 100%;
+    margin: 0 auto;
+}    
+
+*/
+.show-desktop {
+    display: block;
+    margin: 0 auto ;
+} 
+.hide-desktop{
+    display: none;
+} 
+
+.logo1{
+    width:23%;
+}
+
+nav ul {
+    position: inherit; 
+    background: none;
+    height:auto;
+    display: flex;
+    padding-top: 0;
+    text-align: left;
+    
+
+    width:auto;
+} 
+
+nav ul li {
+    float: left;
+    padding-top: 10px;
+    padding-right: 60px;
+}
+
+nav ul li a {
+    float: left;
+    color: black;
+    background-color: inherit;
+    text-align: right;
+} 
+
+nav ul li a:hover {
+    background-color: inherit;
+    color: #fff;
+} 
+     
+}
+
+/* mudar elementos conforme o tamanho da pagina */
+@media only screen and (max-width:1000px)  {
+
+.logo2{
+    padding-bottom: 5%;
+}
+     
+}
+
+
+/* mudar elementos conforme o tamanho da pagina */
+@media only screen and (max-width:700px)  {
+
+.logo2{
+    padding-bottom: 7%;
+}
+
+.header{
+    width:100%;
+    height:100%;
+}
+     
+}
+
+/* mudar elementos conforme o tamanho da pagina */
+@media only screen and (max-width:400px)  {
+
+.logo2{
+    padding-bottom: 10%;
+}
+
+.menu{
+    width:20px;
+    margin-top: 20%;
+}
+     
+}
+
+/* mudar elementos conforme o tamanho da pagina */
+@media only screen and (max-width:700px)  {
+
+.logo2{
+    padding-bottom: 7%;
+}
+
+
+.menu{
+    width:20px;
+    margin-top: 35%;
+}
+     
+}
+
