@@ -576,7 +576,7 @@ nav ul li a:hover{
 
 
 /* mudar elementos conforme o tamanho da pagina */
-@media only screen and (min-width: 1000px) and (max-width:1400px)  {
+@media only screen and (min-width: 1000px) and (max-width:1700px)  {
 
 
 /* .container {
@@ -630,7 +630,7 @@ nav ul li a:hover {
 }
 
 /* mudar elementos conforme o tamanho da pagina */
-@media only screen and (max-width:1400px)  {
+@media only screen and (max-width:1000px)  {
 
 .logo2{
     padding-bottom: 5%;
