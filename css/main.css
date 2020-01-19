@@ -34,6 +34,7 @@ ul{
     /* padding-right: 90%; */
     margin-right: 10px;
     z-index: 9999;
+    fill: rgb(68, 255, 21);
 }
 
 .logo{
@@ -53,23 +54,22 @@ button {
 
 .myButton {
 	box-shadow:inset 0px 2px 9px -2px #000000;
-	background:linear-gradient(to bottom, #3a9969 5%, #3a9969  100%);
+	background:linear-gradient(to bottom,  #232931 5%, #232931  100%);
 	background-color:#3a9969;
 	border-radius:6px;
 	border:1px solid #3a9969;
 	display:inline-block;
 	cursor:pointer;
-	color:#31502e;
+	color:#44FF15;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
 	padding:9px 38px;
 	text-decoration:none;
-	text-shadow:0px -2px 0px #3a9969;
 }
 .myButton:hover {
-	background:linear-gradient(to bottom, #3a9969 5%, #5cb811 100%);
-	background-color:#3a9969;
+    background:linear-gradient(to bottom,#333841 5%,#333841 100%);
+    transition: 0.5s;
 }
 .myButton:active {
 	position:relative;
@@ -78,6 +78,10 @@ button {
 
 .section1{
     margin-top: 15%;
+}
+
+.section1 .btn a .fa{
+    padding-left: 6px;
 }
 
 .diogoInfo{
@@ -89,7 +93,7 @@ header{
     position: fixed;
     justify-content: space-between;
     width:100%;
-   background-color: #3a9969;
+   background-color: #232931;
    z-index: 9999;
 }
 
@@ -107,10 +111,6 @@ header{
     margin-left: 10px;
 }
 
-.javascriptPhoto{
-    width: 30px;
-    margin-left: 10px;
-}
 
 h1, .subhead {
     position: relative;
@@ -121,10 +121,18 @@ h1, .subhead {
      font-size: 1.2em;
 }
 
+.green-container .name{
+    color: rgb(68, 255, 21) ;
+}
+
+.green-container h1{
+    color: rgb(68, 255, 21) ;
+}
+
 .green-container{
     text-align: center;
     width:100%;
-    background:#3fbf7f;
+    background: #393e46;
     color: #ffffff;
     margin: 15% 0 0;
     /* or
@@ -143,7 +151,7 @@ h1, .subhead {
     content:"";
     width: 40px;
     height: 40px;
-    background-color: #3fbf7f;
+    background-color:  #393e46;
     /* podemos meter onde quisermos */
     position: absolute;
     top: -39px;
@@ -184,11 +192,15 @@ h1, .subhead {
     padding-top: 10px;
     list-style: none;
     margin: 60px auto;
-    color:#3ba16e;
+    color: #232931 ;
 }
 
 .skills h1{
-    margin-bottom: 7%;
+    margin-bottom: 5%;
+}
+.skills .adress{
+    margin-top: -4%;
+    margin-bottom: 5%;
 }
 
 .container .skills li h3{
@@ -203,16 +215,16 @@ h1, .subhead {
     background: black;
     display: inline-block;
     height: 2px;
-    border: 1px solid #3ba16e ;
+    border:  solid #000;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow:0 0 10px #167043;
+    box-shadow:0 0 10px #44FF15;
 }
 
 .bar span{
     height: 2px;
     float: left;
-    background: #54eea1;
+    background: #44FF15;
 }
 
 .java{
@@ -329,27 +341,27 @@ nav ul{
     top:0;
     right:0;
     text-align:left;
-    background: #2b7952;
+    background: rgb(62, 67, 75);
     height: 100%;
     z-index: 7;
     padding-top: 3em;
 }
 
 nav ul li a{
-    color: white;
+    color: 	#44FF15;
     text-decoration: none;
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: #3ba16e;
+    background-color: rgb(75, 80, 88);
 }
 
 nav ul li a:hover{
-    color: white;
+    color:#000;
     text-decoration: none;
     width: 100%;
     padding: 1em 2em;
-    background-color: #4dca8c;
+    background-color: #eeeeee;
 }
 
 .logo2{
@@ -368,6 +380,7 @@ nav ul li a:hover{
 .exit-btn img {
     width:5%;
     cursor:pointer;
+    width: 10%;
 }
 
 .green-container .name{
@@ -468,7 +481,7 @@ nav ul li a:hover{
 }
 
 .logo1{
-    width: 25%;
+    width: 10%;
 }
 
 .footer-container .redirections a{
@@ -576,7 +589,7 @@ nav ul li a:hover{
 
 
 /* mudar elementos conforme o tamanho da pagina */
-@media only screen and (min-width: 1000px) and (max-width:1700px)  {
+@media only screen and (min-width: 1000px) and (max-width:2700px)  {
 
 
 /* .container {
@@ -594,7 +607,11 @@ nav ul li a:hover{
 } 
 
 .logo1{
-    width:23%;
+    width:10%;
+    height: 10%;
+    margin-left: 3%;
+    margin-top: -2.5%;
+    margin-bottom: -2%;
 }
 
 nav ul {
@@ -604,8 +621,6 @@ nav ul {
     display: flex;
     padding-top: 0;
     text-align: left;
-    
-
     width:auto;
 } 
 
@@ -617,14 +632,14 @@ nav ul li {
 
 nav ul li a {
     float: left;
-    color: black;
+    color: #fff;
     background-color: inherit;
     text-align: right;
 } 
 
 nav ul li a:hover {
     background-color: inherit;
-    color: #fff;
+    color: rgb(68, 255, 21) ;
 } 
      
 }
@@ -634,6 +649,12 @@ nav ul li a:hover {
 
 .logo2{
     padding-bottom: 5%;
+}
+
+.logo1{
+    margin-top: -2%;
+    margin-bottom: -2%;
+    margin-left: 2%;
 }
      
 }
